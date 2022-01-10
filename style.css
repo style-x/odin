@@ -1,0 +1,43 @@
+* {
+  font-family: 'Courier New', Courier, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 80%;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.container>h1 {
+  background-color: darkolivegreen;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.list>a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  background-color: darkslategrey;
+}
